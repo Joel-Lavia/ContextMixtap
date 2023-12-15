@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import MixtapeProvider from './components/MixtapeProvider';
 const songs = [
   {
     artist: "Smash Mouth",
@@ -35,9 +36,12 @@ const songs = [
 
 function App() {
     return (
+    
     <div className="app">
+      <MixtapeProvider songs={''}>
       <h1 className="heading">My 🔥 Mixtape</h1>
       TODO: make some music...? 🎶
+      </MixtapeProvider>
     </div>
   );
 }
